@@ -1,0 +1,73 @@
+/* 
+
+Theme Name: PT SAMUDERA
+Version: 1.0.0
+Author: KSM Android
+
+*/
+
+@tailwind base;
+
+.menu-header-container {
+  height: 100%;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.menu > li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+  margin: 0px 10px;
+  color: white;
+  position: relative;
+}
+
+.menu > li:last-child > a {
+  padding: 10px 30px;
+  background-color: black;
+  border-radius: 100px;
+}
+.menu > li > a {
+  font-weight: bold;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.menu > li:hover {
+  background-color: #363636;
+}
+
+.sub-menu {
+  display: none;
+  padding: 20px;
+  width: 200px;
+  background-color: #363636;
+}
+
+.menu > li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+
+h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.article > p {
+  margin: 14px 0;
+}
+
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Poppins&display=swap");
